@@ -6,11 +6,11 @@
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:57:19 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/09 19:52:45 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/10 20:18:29 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+int	ft_isprint(int c);
 
 int	ft_isprint(int c)
 {
