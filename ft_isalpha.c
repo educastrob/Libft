@@ -6,11 +6,11 @@
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 14:00:49 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/10 20:14:27 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/10 21:23:25 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c);
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
