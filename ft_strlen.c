@@ -6,11 +6,11 @@
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:58:53 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/10 20:09:38 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/10 21:23:24 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *str);
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {

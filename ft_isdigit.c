@@ -6,11 +6,11 @@
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 15:04:37 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/10 20:14:43 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/10 21:23:28 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c);
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
