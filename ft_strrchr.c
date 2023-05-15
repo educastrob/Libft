@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 19:52:52 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/15 17:44:03 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/15 17:08:56 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/15 17:44:15 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
+char	*ft_strrchr(const char *str, int c)
+{
+	char	*last_occurrence;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-int		ft_strlen(const char *str);
-int		ft_atoi(const char *str);
-char	*ft_strchr(const char *str, int c);
-char	*ft_strrchr(const char *str, int c);
-
-#endif
+	last_occurrence = NULL;
+	while (*str != '\0')
+	{
+		if (*str == c)
+			last_occurrence = (char *) str;
+		str++;
+	}
+	if (c == '\0')
+		return ((char *) str);
+	return (last_occurrence);
+}
