@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:52:52 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/10 22:30:07 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/15 15:39:24 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	ft_toupper(int c);
 int	ft_tolower(int c);
 int	ft_strlen(const char *str);
 int	ft_atoi(const char *str);
+char	*ft_strchr(const char *str, char c);
 
 #endif
