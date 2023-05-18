@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_schr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edcaso <edcaso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/15 14:30:08 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/15 17:41:29 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 12:22:59 by edcaso          #+#    #+#             */
+/*   Updated: 2023/05/18 12:22:59 by edcaso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	while (*str != '\0')
+	while (*s)
 	{
-		if (*str == c)
-			return ((char *) str);
-		str++;
+		if (*s == (unsigned char)c)
+			return ((char *) s);
+		s++;
 	}
 	if (c == '\0')
-		return ((char *) str);
+		return ((char *) s);
 	return (NULL);
 }

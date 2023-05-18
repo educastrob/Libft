@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edcaso <edcaso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/18 03:00:15 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/18 04:40:30 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 03:00:15 by edcaso          #+#    #+#             */
+/*   Updated: 2023/05/18 10:06:36 by edcaso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	while (n-- == 0)
-		((unsigned char *)str)[n] = c;
-	return (str);
+	while (n--)
+		((unsigned char *)s)[n] = c;
+	return (s);
 }
