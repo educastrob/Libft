@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_srchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcastro <edcastro@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edcaso <edcaso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/15 17:08:56 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/15 17:44:15 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 12:23:13 by edcaso          #+#    #+#             */
+/*   Updated: 2023/05/18 12:23:13 by edcaso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	*last_occurrence;
 
 	last_occurrence = NULL;
-	while (*str != '\0')
+	while (*s)
 	{
-		if (*str == c)
-			last_occurrence = (char *) str;
-		str++;
+		if (*s == (unsigned char) c)
+			last_occurrence = (char *) s;
+		s++;
 	}
 	if (c == '\0')
-		return ((char *) str);
+		return ((char *) s);
 	return (last_occurrence);
 }
