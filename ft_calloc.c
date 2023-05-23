@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcaso <edcaso@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/18 12:23:13 by edcaso          #+#    #+#             */
-/*   Updated: 2023/05/23 19:27:58 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/23 19:29:20 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/23 20:07:24 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	char	*last_occurrence;
+	char	*pointer;
+	size_t	i;
 
-	last_occurrence = NULL;
-	while (*s)
+	pointer = malloc(nmemb * size);
+	i = 0;
+	if (pointer == NULL)
+		return (0);
+	if (nmemb > __SIZE_MAX__ / size)
+		return (NULL);
+	while (i < nmemb * size)
 	{
-		if (*s == (unsigned char) c)
-			last_occurrence = (char *) s;
-		s++;
+		pointer[i] = 0;
+		i++;
 	}
-	if (c == '\0')
-		return ((char *) s);
-	return (last_occurrence);
+	return (pointer);
 }
