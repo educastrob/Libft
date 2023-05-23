@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 19:11:27 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 12:27:54 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/18 12:27:54 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+int	ft_atoi(const char *nptr)
 {
-	char	*dest;
-	size_t	src_len;
+	int	i;
+	int	num;
+	int	sign;
 
-	src_len = ft_strlen(s) + 1;
-	dest = (char *) malloc(src_len);
-	if (s != NULL && dest != NULL)
-		ft_strlcpy(dest, s, src_len);
-	return (dest);
+	i = 0;
+	num = 0;
+	sign = 1;
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
+		i++;
+	if (nptr[i] == '-')
+	{
+		sign = -1;
+		i++;
+	}
+	else if (nptr[i] == '+')
+		i++;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		num = num * 10 + (nptr[i] - 48);
+		i++;
+	}
+	return (num * sign);
 }
-

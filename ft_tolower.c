@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 19:11:27 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 12:23:18 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/18 12:23:19 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+int	ft_tolower(int c)
 {
-	char	*dest;
-	size_t	src_len;
-
-	src_len = ft_strlen(s) + 1;
-	dest = (char *) malloc(src_len);
-	if (s != NULL && dest != NULL)
-		ft_strlcpy(dest, s, src_len);
-	return (dest);
+	if (c >= 'A' && c <= 'Z')
+		return (c + ('a' - 'A'));
+	else
+		return (c);
 }
-

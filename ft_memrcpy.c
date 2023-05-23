@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memrcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 19:11:27 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 10:55:38 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/18 11:06:47 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+void	*ft_memrcpy(void *dest, const void *src, size_t n)
 {
-	char	*dest;
-	size_t	src_len;
-
-	src_len = ft_strlen(s) + 1;
-	dest = (char *) malloc(src_len);
-	if (s != NULL && dest != NULL)
-		ft_strlcpy(dest, s, src_len);
+	while (n--)
+		*(unsigned char *)(dest + n) = *(unsigned char *)(src + n);
 	return (dest);
 }
-

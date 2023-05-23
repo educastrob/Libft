@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_srchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edcaso <edcaso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 19:11:27 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/18 12:23:13 by edcaso          #+#    #+#             */
+/*   Updated: 2023/05/18 12:23:13 by edcaso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+char	*ft_strchr(const char *s, int c)
 {
-	char	*dest;
-	size_t	src_len;
+	char	*last_occurrence;
 
-	src_len = ft_strlen(s) + 1;
-	dest = (char *) malloc(src_len);
-	if (s != NULL && dest != NULL)
-		ft_strlcpy(dest, s, src_len);
-	return (dest);
+	last_occurrence = NULL;
+	while (*s)
+	{
+		if (*s == (unsigned char) c)
+			last_occurrence = (char *) s;
+		s++;
+	}
+	if (c == '\0')
+		return ((char *) s);
+	return (last_occurrence);
 }
-
