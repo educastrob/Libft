@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 17:12:57 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/23 16:19:39 by edcastro          #+#    #+#             */
+/*   Updated: 2023/05/23 17:10:20 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*dest;
-	size_t	src_len;
+	size_t	i;
 
-	src_len = ft_strlen(s) + 1;
-	dest = (char *) malloc(src_len);
-	if (s != NULL && dest != NULL)
-		ft_strlcpy(dest, s, src_len);
-	return (dest);
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (n--)
+		if (*(int *)(s1 + i) == *(int *)(s2 + i))
+			i++;
+	return (*(int *)s1 - *(int *)s2);
 }

@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:00:20 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 15:13:44 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/23 17:13:26 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[dest_len + i] = '\0';
 	return (result);
 }
-
