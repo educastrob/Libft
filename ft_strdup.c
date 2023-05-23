@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:59:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 17:12:57 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/05/23 19:11:27 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,4 @@ char	*ft_strdup(const char *s)
 		ft_strlcpy(dest, s, src_len);
 	return (dest);
 }
+
