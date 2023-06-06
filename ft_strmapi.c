@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memrcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/18 10:55:38 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/18 11:06:47 by edcastro         ###   ########.fr       */
+/*   Created: 2023/05/30 11:18:53 by edcastro          #+#    #+#             */
+/*   Updated: 2023/06/05 21:04:56 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memrcpy(void *dest, const void *src, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	while (n--)
-		*(unsigned char *)(dest + n) = *(unsigned char *)(src + n);
-	return (dest);
+	char	*string;
+	size_t	i;
+
+	string = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!string)
+		return (NULL);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		string[i] = f(i, s[i]);
+		i++;
+	}
+	string[i] = '\0';
+	return (string);
 }
