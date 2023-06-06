@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 19:52:52 by edcastro          #+#    #+#             */
-/*   Updated: 2023/06/05 21:11:07 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/06 18:51:34 by eduardo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,6 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char    *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
