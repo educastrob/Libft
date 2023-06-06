@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:00:20 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 17:13:26 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/05 19:58:55 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,24 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	dest_len;
+	size_t	destiny;
+	size_t	source;
 	size_t	result;
 
-	result = 0;
 	i = 0;
-	dest_len = ft_strlen(dst);
-	if (dest_len < size)
-		result = ft_strlen(src) + dest_len;
+	result = 0;
+	destiny = ft_strlen(dst);
+	source = ft_strlen(src);
+	if (size > destiny)
+		result = source + destiny;
 	else
-		result = ft_strlen(src) + size;
-	while ((dest_len + 1) < size && src[i])
-		dst[dest_len++] = src[i++];
-	if (size)
-		dst[dest_len + i] = '\0';
+		result = source + size;
+	while (size > (destiny + 1) && src[i] != '\0')
+	{
+		dst[destiny] = src[i];
+		destiny++;
+		i++;
+	}
+	dst[destiny] = '\0';
 	return (result);
 }
