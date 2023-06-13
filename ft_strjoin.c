@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eduardo <eduardo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 18:57:04 by eduardo           #+#    #+#             */
-/*   Updated: 2023/06/06 19:14:34 by eduardo          ###   ########.fr       */
+/*   Updated: 2023/06/13 20:29:14 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,20 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	i;
-	size_t	j;
+	size_t	s1_len;
+	size_t	s2_len;
+	char	*new_str;
 
-	str = (char *) ft_calloc(sizeof(*s1), ft_strlen(s1) + ft_strlen(s2) + 1);
-	i = 0;
-	j = 0;
-	if (!str)
+	if (!s1 || !s2)
 		return (NULL);
-	while (s1[i] != '\0')
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	new_str = (char *) malloc((s1_len + s2_len + 1) * sizeof(char));
+	if (new_str != NULL)
 	{
-		str[j++] = s1[i];
-		i++;
+		ft_strlcpy(new_str, s1, s1_len + 1);
+		ft_strlcat(new_str, s2, s1_len + s2_len + 1);
+		return (new_str);
 	}
-	i = 0;
-	while (s2[i] != '\0')
-	{
-		str[j++] = s2[i];
-		i++;
-	}
-	str[j] = '\0';
-	return (str);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 16:47:40 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/23 17:17:24 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/13 19:58:26 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,20 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	char	*first_occurrence;
-	size_t	i;
 	size_t	little_len;
 
-	first_occurrence = NULL;
-	i = 0;
 	little_len = ft_strlen(little);
-	while (big[i] && i < len && little_len)
+	if (little_len == 0)
+		return ((char *)big);
+	if (len == 0)
+		return (NULL);
+	while (*big && len-- >= little_len)
 	{
-		if (!ft_strncmp((big + i), little, little_len) && (little_len
-				+ i <= len))
+		if (ft_strncmp(big, little, little_len) == 0)
 		{
-			first_occurrence = (char *)(big + i);
-			break ;
+			return ((char *) big);
 		}
-		i++;
+			big++;
 	}
-	if (!little_len)
-		first_occurrence = (char *)big;
-	return (first_occurrence);
+	return (NULL);
 }

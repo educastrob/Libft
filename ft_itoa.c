@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 22:53:21 by edcastro          #+#    #+#             */
-/*   Updated: 2023/05/30 15:31:19 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/13 20:52:07 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char	*ft_itoa(int n)
 	number = n;
 	len = count_digits(number);
 	str = ft_calloc(len + 1, sizeof(char));
+	if (!str)
+		return (NULL);
 	if (number < 0)
 	{
 		number *= -1;

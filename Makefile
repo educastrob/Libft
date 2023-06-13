@@ -6,7 +6,7 @@
 #    By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/09 19:42:00 by eduardo           #+#    #+#              #
-#    Updated: 2023/06/13 19:08:49 by edcastro         ###   ########.fr        #
+#    Updated: 2023/06/13 19:22:45 by edcastro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,4 +59,5 @@ rebonus: fclean bonus
 so:
 	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC) $(SRC_BONUS)
 	gcc -nostartfiles -shared -o libft.so $(OBJS) $(OBJS_BONUS)
+	
 .PHONY: all clean fclean re bonus
