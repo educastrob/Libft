@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 11:18:53 by edcastro          #+#    #+#             */
-/*   Updated: 2023/06/13 20:46:10 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/13 21:03:54 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,23 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*string;
+	char	*newstr;
+	char	*str;
 	size_t	i;
 
-	string = ft_calloc(ft_strlen(s) + 1, sizeof(char));
-	if (!s || !f || !string)
+	if (!s)
 		return (NULL);
+	str = (char *)s;
 	i = 0;
+	newstr = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!newstr)
+		return (NULL);
 	while (s[i] != '\0')
 	{
-		string[i] = (*f)(i, s[i]);
+		newstr[i] = f(i, s[i]);
 		i++;
 	}
-	string[i] = '\0';
-	return (string);
+	if (!newstr)
+		return (NULL);
+	return (newstr);
 }
