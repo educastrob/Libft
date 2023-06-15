@@ -6,7 +6,7 @@
 /*   By: edcastro <edcastro@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:00:20 by edcastro          #+#    #+#             */
-/*   Updated: 2023/06/13 19:51:18 by edcastro         ###   ########.fr       */
+/*   Updated: 2023/06/15 17:08:16 by edcastro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	source;
 	size_t	result;
 
-	if ((!dst && !src) || size == 0)
+	if (((!src || !dst) && !size))
 		return (0);
 	i = 0;
 	result = 0;
