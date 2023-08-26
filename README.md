@@ -2,7 +2,7 @@
 <table>
 <thead>
   <tr>
-    <th colspan="2">C Library <a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">&lt;ctype.h&gt;</a></th>
+    <th colspan="2" rowspan="2">C Library <a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">&lt;ctype.h&gt;</a></th>
   </tr>
 </thead>
 <tbody>
