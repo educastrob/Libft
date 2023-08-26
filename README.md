@@ -2,13 +2,13 @@
 <table>
 <thead>
   <tr>
-    <th colspan="2" rowspan="2">C Library <a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">&lt;ctype.h&gt;</a></th>
+    <th colspan="2" rowspan="3">C Library <a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">&lt;ctype.h&gt;</a></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Libft</td>
-    <td>Description</td>
+    <td><b>Libft</b></td>
+    <td><b>Description</b></td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isalnum.c" target="_blank" rel="noopener noreferrer">ft_isalnum</a></td>
