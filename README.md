@@ -1,4 +1,7 @@
-<h2> C standard library</h2>
+## Libft
+Your first own library
+
+## C standard library
 
 <table>
     <thead>
@@ -225,3 +228,23 @@
         </tr>
     </tbody>
 </table>
+
+## Getting Started
+
+First, clone this repository and `cd` into it:
+
+```zsh
+git clone https://github.com/educastrob/libft && cd libft
+```
+
+Compile the library with:
+
+```zsh
+make
+```
+
+Now you have a file called `libft.a`, use any function of the libft and compile your code with the archive.   
+
+```zsh
+gcc main.c libft.a && ./a.out
+```
