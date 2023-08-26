@@ -1,7 +1,7 @@
 <div align = center>
     
 ## Libft
-Your first own library
+Create your first own C library
 
 </div>
     
