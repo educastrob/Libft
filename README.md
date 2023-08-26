@@ -1,6 +1,10 @@
+<div align = center>
+    
 ## Libft
 Your first own library
 
+</div>
+    
 ## C standard library
 
 <table>
