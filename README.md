@@ -6,7 +6,7 @@ Create your first own C library
 </div>
 
 
-## C standard library
+## C Standard Library
 
 <table>
     <thead>
