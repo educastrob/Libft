@@ -4,7 +4,8 @@
 Create your first own C library
 
 </div>
-    
+
+
 ## C standard library
 
 <table>
@@ -232,6 +233,7 @@ Create your first own C library
         </tr>
     </tbody>
 </table>
+
 
 ## Getting Started
 
