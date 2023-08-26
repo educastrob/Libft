@@ -12,31 +12,31 @@
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isalnum.c" target="_blank" rel="noopener noreferrer">ft_isalnum</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Checks whether the passed character is alphanumeric</a></td>
+    <td>Checks whether the passed character is alphanumeric</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isalpha.c" target="_blank" rel="noopener noreferrer">ft_isalpha</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Checks whether the passed character is alphabetic.</a></td>
+    <td>Checks whether the passed character is alphabetic.</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isascii.c" target="_blank" rel="noopener noreferrer">ft_isascii</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Checks whether the passed character is ASCII.</a></td>
+    <td>Checks whether the passed character is ASCII.</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isdigit.c" target="_blank" rel="noopener noreferrer">ft_isdigit</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Checks whether the passed character is decimal digit.</a></td>
+    <td>Checks whether the passed character is decimal digit.</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_isprint.c" target="_blank" rel="noopener noreferrer">ft_isprint</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Checks whether the passed character is printable.</a></td>
+    <td>Checks whether the passed character is printable.</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_tolower.c" target="_blank" rel="noopener noreferrer">ft_tolower</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Converts uppercase letters to lowercase.</a></td>
+    <td>Converts uppercase letters to lowercase.</td>
   </tr>
   <tr>
     <td><a href="https://github.com/educastrob/libft/blob/main/ft_toupper.c" target="_blank" rel="noopener noreferrer">ft_toupper</a></td>
-    <td><a href="https://www.tutorialspoint.com/c_standard_library/ctype_h.htm" target="_blank" rel="noopener noreferrer">Converts lowercase letters to uppercase.</a></td>
+    <td>Converts lowercase letters to uppercase.</td>
   </tr>
 </tbody>
 </table>
