@@ -1,5 +1,4 @@
 # C Standard Library
----
 <table>
 <thead>
   <tr>
