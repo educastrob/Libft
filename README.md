@@ -240,17 +240,17 @@ Create your first own C library
 First, clone this repository and `cd` into it:
 
 ```zsh
-git clone https://github.com/educastrob/libft && cd libft
+$> git clone https://github.com/educastrob/libft && cd libft
 ```
 
 Compile the library with:
 
 ```zsh
-make
+$> make
 ```
 
 Now you have a file called `libft.a`, use any function of the libft and compile your code with the archive.   
 
 ```zsh
-gcc main.c libft.a && ./a.out
+$> gcc main.c libft.a && ./a.out
 ```
