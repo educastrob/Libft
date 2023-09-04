@@ -15,12 +15,10 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*newstr;
-	char	*str;
 	size_t	i;
 
 	if (!s)
 		return (NULL);
-	str = (char *)s;
 	i = 0;
 	newstr = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!newstr)
