@@ -235,7 +235,7 @@ Create your first own C library
 </table>
 
 
-## How to Execute
+## How to Use
 
 First, clone this repository and `cd` into it:
 
