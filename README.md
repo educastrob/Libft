@@ -20,7 +20,7 @@ Create your first own C library
     </thead>
     <tbody>
         <tr>
-            <td><a href=ft_isalnum.c>ft_isalnum</a></td>
+            <td><a href=mandatory/ft_isalnum.c>ft_isalnum</a></td>
             <td>Checks whether the passed character is alphanumeric.</td>
         </tr>
         <tr>
