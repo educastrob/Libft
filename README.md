@@ -246,7 +246,7 @@ $> git clone https://github.com/educastrob/libft && cd libft
 Compile the library with:
 
 ```zsh
-$> make all
+$> make
 ```
 
 Now you have a file called `libft.a`, use any function of the libft and compile your code with the archive.   
